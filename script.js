@@ -56,6 +56,11 @@
 			if (val !== null) el.textContent = val;
 		});
 
+		const resumeBtn = document.getElementById('resume-btn');
+		if (resumeBtn) {
+			resumeBtn.href = resumeBtn.getAttribute('data-' + lang);
+		}
+
 		localStorage.setItem('portfolio-lang', lang);
 	}
 

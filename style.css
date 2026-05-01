@@ -114,7 +114,7 @@ html[data-lang="cn"] p              { font-size: 1.05em; }
 html[data-lang="cn"] h2             { font-size: 1.65rem; }
 html[data-lang="cn"] h3             { font-size: 1.1rem; }
 html[data-lang="cn"] .report-val    { font-size: 1.05em; }
-html[data-lang="cn"] .nav-links a   { font-size: 1.05em; }
+html[data-lang="cn"] .nav-links a:not(#resume-btn)   { font-size: 1.05em; }
 html[data-lang="cn"] .timeline-courses { font-size: 1em; }
 html[data-lang="cn"] .project-bullets li { font-size: 1.05em; }
 html[data-lang="cn"] .finding-block p   { font-size: 1.05em; }
@@ -902,9 +902,96 @@ html[data-lang="cn"] .timeline-courses { font-size: 0.88rem; }
 	color: var(--text-sec);
 }
 
-.contact-placeholder-val {
-	color: var(--amber);
-	font-style: italic;
+.contact-wechat-item {
+	position: relative;
+	cursor: default;
+}
+
+.contact-wechat-item:hover {
+	border-color: var(--green);
+	background: rgba(56,212,122,0.04);
+}
+
+.contact-wechat-item .wechat-icon {
+	color: var(--green);
+}
+
+.wechat-hint {
+	margin-left: auto;
+	font-size: 0.68rem;
+	letter-spacing: 0.06em;
+	opacity: 0.6;
+	transition: opacity var(--transition);
+}
+
+.contact-wechat-item:hover .wechat-hint {
+	opacity: 0;
+}
+
+.wechat-qr-popover {
+	position: absolute;
+	bottom: calc(100% + 10px);
+	left: 50%;
+	transform: translateX(-50%) translateY(6px);
+	background: var(--surface);
+	border: 1px solid var(--green);
+	border-radius: var(--radius);
+	padding: 12px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+	box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.2s ease, transform 0.2s ease;
+	z-index: 100;
+	white-space: nowrap;
+}
+
+.wechat-qr-popover img {
+	width: 160px;
+	height: 160px;
+	object-fit: cover;
+	display: block;
+	border-radius: var(--radius);
+}
+
+.wechat-qr-popover span {
+	font-size: 0.72rem;
+	color: var(--text-sec);
+	letter-spacing: 0.04em;
+}
+
+.contact-wechat-item:hover .wechat-qr-popover {
+	opacity: 1;
+	pointer-events: auto;
+	transform: translateX(-50%) translateY(0);
+}
+
+.resume-btn {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	padding: 5px 12px;
+	font-size: 0.8rem;
+	color: var(--blue);
+	border: 1px solid rgba(58,159,255,0.35);
+	border-radius: var(--radius);
+	text-decoration: none;
+	background: rgba(58,159,255,0.06);
+	transition: color var(--transition), border-color var(--transition), background var(--transition);
+	white-space: nowrap;
+}
+
+.resume-btn:hover {
+	color: #fff;
+	border-color: var(--blue);
+	background: rgba(58,159,255,0.15);
+}
+
+.resume-btn i {
+	font-size: 0.78rem;
 }
 
 /*  ═══FOOTER ═══ */
