@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="GERARD Romain - Software Engineering & Security Research Portfolio">
+	<title>GERARD Romain - Portfolio</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div id="cursor"></div>
+	<div id="cursor-trail"></div>
+
+	<!-- ═══ NAV ═══ -->
+	<nav id="nav">
+		<div class="nav-inner">
+			<a href="#hero" class="nav-logo">GERARD<span class="accent-blue">.R</span></a>
+			<button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+				<span></span><span></span><span></span>
+			</button>
+			<ul class="nav-links" id="nav-links">
+				<li><a href="#about"><span class="nav-num">01.</span><span data-en="About" data-cn="关于"></span></a></li>
+				<li><a href="#experience"><span class="nav-num">02.</span><span data-en="Experience" data-cn="经历"></span></a></li>
+				<li><a href="#projects"><span class="nav-num">03.</span><span data-en="Projects" data-cn="项目"></span></a></li>
+				<li><a href="#contact"><span class="nav-num">04.</span><span data-en="Contact" data-cn="联系"></span></a></li>
+				<li>
+					<button id="lang-toggle" class="lang-btn" aria-label="Toggle language">
+						<span id="lang-label">中文</span>
+					</button>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- ═══ HERO ═══ -->
+	<section id="hero">
+		<div class="hero-inner">
+			<div class="report-card reveal">
+
+				<div class="report-topbar">
+					<span class="report-title-text" data-en="SUBJECT ASSESSMENT REPORT" data-cn="人员评估报告"></span>
+					<span class="report-classification" data-en="CLASSIFICATION: PUBLIC" data-cn="分类：公开"></span>
+				</div>
+
+				<div class="report-divider"></div>
+
+				<div class="report-fields">
+
+					<div class="report-row">
+						<span class="report-key" data-en="TARGET" data-cn="对象"></span>
+						<span class="report-sep">:</span>
+						<span class="report-val highlight-name">GERARD, Romain</span>
+					</div>
+
+					<div class="report-row">
+						<span class="report-key" data-en="ROLE" data-cn="目标岗位"></span>
+						<span class="report-sep">:</span>
+						<span class="report-val"><span id="typewriter"></span><span class="cursor-blink">▋</span></span>
+					</div>
+
+					<div class="report-row">
+						<span class="report-key" data-en="STATUS" data-cn="状态"></span>
+						<span class="report-sep">:</span>
+						<span class="report-val">
+							<span class="badge badge-warn" data-en="SEEKING INTERNSHIP - SEP 2026" data-cn="寻求实习机会 - 2026年9月"></span>
+						</span>
+					</div>
+
+					<div class="report-row">
+						<span class="report-key" data-en="CLEARANCE" data-cn="学历背景"></span>
+						<span class="report-sep">:</span>
+						<span class="report-val" data-en="M.Eng. Electronic Information - USTC, Suzhou" data-cn="电子信息硕士研究生 - 中国科学技术大学，苏州"></span>
+					</div>
+
+					<div class="report-row">
+						<span class="report-key" data-en="LOCATION" data-cn="位置"></span>
+						<span class="report-sep">:</span>
+						<span class="report-val" data-en="Suzhou, Jiangsu, PRC" data-cn="中国江苏省苏州市"></span>
+					</div>
+
+					<div class="report-row">
+						<span class="report-key" data-en="VISA" data-cn="签证"></span>
+						<span class="report-sep">:</span>
+						<span class="report-val" data-en="X-class student visa - legally eligible to intern in PRC" data-cn="X类学生签证 - 合法在华实习资质"></span>
+					</div>
+
+					<div class="report-row">
+						<span class="report-key" data-en="LOCAL TIME" data-cn="本地时间"></span>
+						<span class="report-sep">:</span>
+						<span class="report-val"><span id="clock"></span> <span class="text-muted">CST (UTC+8)</span></span>
+					</div>
+
+				</div>
+
+				<div class="report-divider"></div>
+
+				<div class="report-footer-links">
+					<a href="https://linkedin.com/in/romain-gerard" target="_blank" rel="noopener" class="hero-link">
+						<i class="fab fa-linkedin"></i> linkedin.com/in/romain-gerard
+					</a>
+					<span class="report-footer-sep">·</span>
+					<a href="https://github.com/BreadyBred" target="_blank" rel="noopener" class="hero-link">
+						<i class="fab fa-github"></i> github.com/BreadyBred
+					</a>
+					<span class="report-footer-sep">·</span>
+					<a href="mailto:gerarromain@gmail.com" class="hero-link">
+						<i class="fas fa-envelope"></i> gerarromain@gmail.com
+					</a>
+				</div>
+
+			</div>
+
+			<div class="scroll-hint reveal">
+				<span data-en="scroll to read report" data-cn="向下滚动阅读报告"></span>
+				<i class="fas fa-chevron-down"></i>
+			</div>
+		</div>
+	</section>
+
+	<!-- ═══ ABOUT ═══ -->
+	<section id="about">
+		<div class="container">
+
+			<div class="section-header reveal">
+				<span class="section-num">§ 200</span>
+				<h2 data-en="About" data-cn="关于"></h2>
+				<span class="section-tag badge badge-info" data-en="PROFILE" data-cn="简介"></span>
+			</div>
+
+			<div class="about-grid">
+
+				<div class="about-bio">
+					<div class="finding-block reveal">
+						<div class="finding-label" data-en="SUBJECT OVERVIEW" data-cn="人员概况"></div>
+						<p data-en="French software engineer pursuing an M.Eng. in Electronic Information (Software Engineering) at USTC. Undergraduate background in full-stack web development; transitioned into systems security and AI security research upon entering USTC. Currently leading research on an LLM pentesting framework at the Information Security Lab. Solid systems programming and network security background. Seeking software engineering or security internship in an English-capable team."
+							 data-cn="法国籍软件工程师，现就读于中国科学技术大学电子信息硕士项目（软件工程方向）。本科期间专注于全栈Web开发，入读中科大后转型至系统安全与AI安全研究领域，目前在信息安全实验室主导大模型渗透测试框架的研究工作。具备扎实的系统编程与网络安全实践能力，寻求英语工作环境下的软件工程或信息安全实习机会。"></p>
+					</div>
+
+					<div class="finding-block reveal">
+						<div class="finding-label" data-en="LANGUAGE PROFICIENCY" data-cn="语言能力"></div>
+						<div class="lang-list">
+							<div class="lang-item">
+								<span class="lang-name">Français</span>
+								<span class="badge badge-pass" data-en="Native" data-cn="母语"></span>
+							</div>
+							<div class="lang-item">
+								<span class="lang-name">English</span>
+								<span class="badge badge-info" data-en="C1 - IELTS 7.5" data-cn="C1 - 雅思 7.5"></span>
+							</div>
+							<div class="lang-item">
+								<span class="lang-name">Español</span>
+								<span class="badge badge-warn" data-en="B1" data-cn="B1"></span>
+							</div>
+							<div class="lang-item">
+								<span class="lang-name">普通话</span>
+								<span class="badge badge-muted" data-en="A1 - HSK1" data-cn="A1 - HSK1"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="about-skills">
+					<div class="skills-block reveal">
+						<div class="finding-label">
+							<span class="badge badge-crit">CRIT</span>
+							<span data-en="Security Tools" data-cn="安全工具"></span>
+						</div>
+						<div class="skill-tags">
+							<span class="skill-tag">Nmap</span>
+							<span class="skill-tag">Burp Suite</span>
+							<span class="skill-tag">Wireshark</span>
+							<span class="skill-tag">Scapy</span>
+							<span class="skill-tag">GDB</span>
+							<span class="skill-tag">Metasploit</span>
+							<span class="skill-tag">Netfilter</span>
+							<span class="skill-tag">x86 Assembly</span>
+						</div>
+					</div>
+
+					<div class="skills-block reveal">
+						<div class="finding-label">
+							<span class="badge badge-warn">WARN</span>
+							<span data-en="Dev & Infrastructure" data-cn="开发与基础设施"></span>
+						</div>
+						<div class="skill-tags">
+							<span class="skill-tag">Python</span>
+							<span class="skill-tag">Flask</span>
+							<span class="skill-tag">JavaScript</span>
+							<span class="skill-tag">ReactJS</span>
+							<span class="skill-tag">PHP</span>
+							<span class="skill-tag">C</span>
+							<span class="skill-tag">C#</span>
+							<span class="skill-tag">Docker</span>
+							<span class="skill-tag">Git</span>
+							<span class="skill-tag">Linux / Bash</span>
+							<span class="skill-tag">MCP</span>
+						</div>
+					</div>
+
+					<div class="skills-block reveal">
+						<div class="finding-label">
+							<span class="badge badge-info">INFO</span>
+							<span data-en="Research Areas" data-cn="研究领域"></span>
+						</div>
+						<div class="skill-tags">
+							<span class="skill-tag">LLM Security</span>
+							<span class="skill-tag">Pentesting</span>
+							<span class="skill-tag">Buffer Overflow</span>
+							<span class="skill-tag">MITM Attacks</span>
+							<span class="skill-tag">CTF</span>
+							<span class="skill-tag">Kernel Dev</span>
+							<span class="skill-tag">Blockchain</span>
+							<span class="skill-tag">Compiler Eng.</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- ═══ EXPERIENCE ═══ -->
+	<section id="experience">
+		<div class="container">
+
+			<div class="section-header reveal">
+				<span class="section-num">§ 300</span>
+				<h2 data-en="Experience" data-cn="经历"></h2>
+				<span class="section-tag badge badge-info" data-en="TIMELINE" data-cn="时间线"></span>
+			</div>
+
+			<div class="timeline">
+
+				<!-- EDUCATION -->
+				<div class="timeline-group reveal">
+					<span class="timeline-group-label" data-en="// EDUCATION" data-cn="// 教育背景"></span>
+				</div>
+
+				<div class="timeline-item reveal">
+					<div class="timeline-connector">
+						<div class="timeline-dot"></div>
+					</div>
+					<div class="timeline-content">
+						<div class="timeline-header">
+							<div class="timeline-title-block">
+								<h3 data-en="University of Science and Technology of China (USTC)" data-cn="中国科学技术大学"></h3>
+								<p class="timeline-role" data-en="M.Eng. Electronic Information - Major: Software Engineering" data-cn="电子信息硕士（软件工程方向）"></p>
+							</div>
+							<div class="timeline-meta">
+								<span class="timeline-date" data-en="2025 – Present" data-cn="2025年 – 至今"></span>
+								<span class="timeline-loc"><i class="fas fa-map-marker-alt"></i> <span data-en="Hefei / Suzhou, China" data-cn="合肥 / 苏州，中国"></span></span>
+							</div>
+						</div>
+						<div class="timeline-body">
+							<span class="badge badge-pass" data-en="GPA: 3.54 / 4.0  (First Semester)" data-cn="绩点：3.54 / 4.0（第一学期）"></span>
+							<p class="timeline-courses" data-en="Courses: Information Security · Compiler Engineering · Blockchain Technologies · Information Theory & Coding · Ubiquitous OS · HarmonyOS Dev · Artificial Intelligence"
+								 data-cn="主要课程：信息安全 · 编译工程 · 区块链技术 · 信息论与编码 · 泛在操作系统 · 鸿蒙应用软件设计 · 人工智能"></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="timeline-item reveal">
+					<div class="timeline-connector">
+						<div class="timeline-dot"></div>
+					</div>
+					<div class="timeline-content">
+						<div class="timeline-header">
+							<div class="timeline-title-block">
+								<h3 data-en="University of Rouen Normandy" data-cn="鲁昂诺曼底大学"></h3>
+								<p class="timeline-role" data-en="B.Sc. Multimedia & Internet Technologies (incl. Associate)" data-cn="多媒体与互联网技术 理学学士（含副学士）"></p>
+							</div>
+							<div class="timeline-meta">
+								<span class="timeline-date" data-en="2020 – 2024" data-cn="2020年 – 2024年"></span>
+								<span class="timeline-loc"><i class="fas fa-map-marker-alt"></i> <span data-en="Rouen, France" data-cn="鲁昂，法国"></span></span>
+							</div>
+						</div>
+						<div class="timeline-body">
+							<span class="badge badge-pass" data-en="GPA: Top of Class - 16.07 / 20" data-cn="GPA：全班第一，16.07 / 20"></span>
+						</div>
+					</div>
+				</div>
+
+				<!-- WORK -->
+				<div class="timeline-group reveal">
+					<span class="timeline-group-label" data-en="// WORK EXPERIENCE" data-cn="// 实习经历"></span>
+				</div>
+
+				<div class="timeline-item reveal">
+					<div class="timeline-connector">
+						<div class="timeline-dot dot-warn"></div>
+					</div>
+					<div class="timeline-content">
+						<div class="timeline-header">
+							<div class="timeline-title-block">
+								<h3>Prescott <span class="timeline-internship-tag" data-en="Internship" data-cn="实习"></span></h3>
+								<p class="timeline-role" data-en="Webmaster & Graphic Designer" data-cn="网站管理员 & 平面设计师"></p>
+							</div>
+							<div class="timeline-meta">
+								<span class="timeline-date" data-en="Apr – Jul 2024" data-cn="2024年4月 – 2024年7月"></span>
+								<span class="timeline-loc"><i class="fas fa-map-marker-alt"></i> <span data-en="Paris, France" data-cn="巴黎，法国"></span></span>
+							</div>
+						</div>
+						<div class="timeline-body">
+							<ul>
+								<li data-en="Managed updates for an existing WordPress platform." data-cn="负责现有WordPress平台的维护与更新。"></li>
+								<li data-en="Produced product visuals and Figma prototypes." data-cn="制作产品视觉素材及Figma原型设计。"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="timeline-item reveal">
+					<div class="timeline-connector">
+						<div class="timeline-dot dot-warn"></div>
+					</div>
+					<div class="timeline-content">
+						<div class="timeline-header">
+							<div class="timeline-title-block">
+								<h3>JKDS Renovation <span class="timeline-internship-tag" data-en="Internship" data-cn="实习"></span></h3>
+								<p class="timeline-role" data-en="Artistic Creation Lead & Front-End Developer" data-cn="艺术创作负责人 & 前端开发"></p>
+							</div>
+							<div class="timeline-meta">
+								<span class="timeline-date" data-en="Apr – Jul 2022" data-cn="2022年4月 – 2022年7月"></span>
+								<span class="timeline-loc"><i class="fas fa-map-marker-alt"></i> <span data-en="Paris, France" data-cn="巴黎，法国"></span></span>
+							</div>
+						</div>
+						<div class="timeline-body">
+							<ul>
+								<li data-en="Designed the company's complete visual identity and built its WordPress website independently." data-cn="设计公司完整视觉识别系统，独立搭建WordPress官网。"></li>
+								<li data-en="Created digital and print assets; optimized site UX to improve new customer acquisition." data-cn="制作数字及印刷物料，优化网站用户体验以提升新客户获取率。"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- COURSEWORK -->
+				<div class="timeline-group reveal">
+					<span class="timeline-group-label" data-en="// NOTABLE COURSEWORK & COMPETITIONS" data-cn="// 课程实验 & 竞赛"></span>
+				</div>
+
+				<div class="timeline-item reveal">
+					<div class="timeline-connector">
+						<div class="timeline-dot dot-crit"></div>
+					</div>
+					<div class="timeline-content">
+						<div class="timeline-header">
+							<div class="timeline-title-block">
+								<h3 data-en="2026 Software System Security Competition (National)" data-cn="2026年全国软件系统安全竞赛"></h3>
+								<p class="timeline-role" data-en="Security Researcher / CTF Competitor" data-cn="安全研究员 / CTF参赛者"></p>
+							</div>
+							<div class="timeline-meta">
+								<span class="timeline-date" data-en="Mar 2026" data-cn="2026年3月"></span>
+								<span class="timeline-loc"><i class="fas fa-map-marker-alt"></i> <span data-en="Suzhou, China" data-cn="苏州，中国"></span></span>
+							</div>
+						</div>
+						<div class="timeline-body">
+							<ul>
+								<li data-en="National-level attack-defense cybersecurity competition." data-cn="参加全国高校软件系统安全攻防竞赛。"></li>
+								<li data-en="Solved challenges across forensics, reverse engineering, and cryptography." data-cn="完成取证、逆向工程及密码学等多类别赛题。"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="timeline-item reveal">
+					<div class="timeline-connector">
+						<div class="timeline-dot dot-crit"></div>
+					</div>
+					<div class="timeline-content">
+						<div class="timeline-header">
+							<div class="timeline-title-block">
+								<h3 data-en="SEED Labs - Network Security Practicum" data-cn="SEED Labs - 网络安全实践"></h3>
+								<p class="timeline-role" data-en="Security Researcher / Graduate Coursework" data-cn="安全研究员 / 研究生课程"></p>
+							</div>
+							<div class="timeline-meta">
+								<span class="timeline-date" data-en="Oct – Nov 2025" data-cn="2025年10月 – 11月"></span>
+								<span class="timeline-loc"><i class="fas fa-map-marker-alt"></i> <span data-en="Suzhou, China" data-cn="苏州，中国"></span></span>
+							</div>
+						</div>
+						<div class="timeline-body">
+							<ul>
+								<li data-en="ARP cache poisoning (request / reply / gratuitous) via Scapy in Docker; MITM on Telnet and Netcat sessions with live traffic modification." data-cn="在Docker环境中使用Scapy执行ARP缓存投毒攻击（请求、回复、无偿ARP），对Telnet和Netcat会话实施实时流量中间人攻击。"></li>
+								<li data-en="32/64-bit buffer overflow exploitation via shellcode injection + GDB-assisted offset calculation; root privilege escalation via Set-UID programs." data-cn="通过Shellcode注入与GDB辅助偏移量计算完成32/64位缓冲区溢出漏洞利用，实现Set-UID程序的root权限提升。"></li>
+								<li data-en="Linux kernel modules using Netfilter hooks for kernel-level traffic filtering by protocol, IP, and port." data-cn="使用Netfilter钩子开发Linux内核模块，按协议、IP及端口对流量进行内核级过滤。"></li>
+								<li data-en="ICMP redirect attacks hijacking victim routing tables; TCP-layer payload interception and modification via Scapy." data-cn="执行ICMP重定向攻击劫持路由表，结合Scapy完成TCP层载荷拦截与篡改。"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="timeline-item reveal">
+					<div class="timeline-connector">
+						<div class="timeline-dot dot-crit"></div>
+					</div>
+					<div class="timeline-content">
+						<div class="timeline-header">
+							<div class="timeline-title-block">
+								<h3 data-en="OS Engineering Labs - Ubiquitous Computing Course" data-cn="操作系统工程实验 - 泛在操作系统课程"></h3>
+								<p class="timeline-role" data-en="Graduate Coursework" data-cn="研究生课程"></p>
+							</div>
+							<div class="timeline-meta">
+								<span class="timeline-date" data-en="Dec 2025" data-cn="2025年12月"></span>
+								<span class="timeline-loc"><i class="fas fa-map-marker-alt"></i> <span data-en="Suzhou, China" data-cn="苏州，中国"></span></span>
+							</div>
+						</div>
+						<div class="timeline-body">
+							<ul>
+								<li data-en="Custom Linux 5.4.0 kernel syscall in C using RCU locking for deadlock-safe process/group ID traversal; validated via kernel logs and /proc." data-cn="在Linux 5.4.0内核中以C语言实现自定义系统调用，采用RCU锁机制保证无死锁的进程/进程组ID遍历。"></li>
+								<li data-en="Cross-compiled Linux 5.4.250 for x86 and ARM64 using GCC + QEMU; built minimal initramfs with BusyBox and custom init scripts." data-cn="使用GCC交叉编译Linux 5.4.250的x86与ARM64版本，配合QEMU构建最小化initramfs与自定义启动脚本。"></li>
+								<li data-en="Buddy memory allocator in C with XOR-based partner indexing, block splitting, and cascading merge on free." data-cn="以C语言实现伙伴内存分配器，支持XOR合法伙伴索引、块分裂与级联合并。"></li>
+								<li data-en="Two-node openEuler 22.03 LTS cluster with HMDFS kernel module; validated 9 distributed FS behaviors including cross-node sync and write conflict detection." data-cn="在双节点集群上部署openEuler 22.03 LTS，加载HMDFS内核模块，验证跨节点同步、写冲突检测等9项分布式文件系统行为。"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- ═══ PROJECTS ═══ -->
+	<section id="projects">
+		<div class="container">
+
+			<div class="section-header reveal">
+				<span class="section-num">§ 400</span>
+				<h2 data-en="Projects" data-cn="项目经历"></h2>
+				<span class="section-tag badge badge-info" data-en="CASE FILES" data-cn="案例档案"></span>
+			</div>
+
+			<div class="projects-grid">
+
+				<div class="project-card project-featured reveal">
+					<div class="project-card-top">
+						<span class="case-id">CASE-001</span>
+						<span class="badge badge-crit" data-en="ACTIVE" data-cn="进行中"></span>
+					</div>
+					<h3 class="project-name">HexStrike-AI</h3>
+					<p class="project-sub" data-en="LLM Security Research Framework" data-cn="大模型安全研究框架"></p>
+					<div class="project-affiliation">
+						<i class="fas fa-flask"></i>
+						<span data-en="USTC Info Security Lab - Engineering Project (Credited)" data-cn="中科大信息安全实验室 - 工程项目（学分认定）"></span>
+					</div>
+					<div class="project-supervisor">
+						<span class="text-muted" data-en="Supervisor: " data-cn="指导教师："></span>
+						<span data-en="Prof. Guo Yan (郭燕)" data-cn="郭燕教授"></span>
+					</div>
+					<ul class="project-bullets">
+						<li data-en="Extended a Python/Flask pentest framework exposing 150+ real security tools via MCP; researched why LLM agents underutilize available tools and designed an improved architecture." data-cn="基于现有Python/Flask渗透测试框架进行扩展，通过MCP协议接入150+真实安全工具，研究LLM代理对可用工具利用不足的成因并设计改进架构。"></li>
+						<li data-en="Ran controlled experiments comparing Claude and DeepSeek across 4 AI clients (Claude.ai, RooCode, 5ire, TRAE) on PicoCTF challenges across 3 variants: baseline preference, ranking compliance, forced compliance." data-cn="设计并执行对照实验，在PicoCTF挑战题中比较Claude与DeepSeek在Claude.ai、RooCode、5ire、TRAE四种客户端上的工具选择行为，涵盖3种实验变体：基线偏好、排名合规、强制合规。"></li>
+						<li data-en="Built a 529-prompt benchmark corpus: 7 CTF categories × 3 difficulty levels × 2 LLMs × 3 clients." data-cn="构建529题提示语料库，结构为7个CTF类别 × 3个难度等级 × 2个LLM × 3个客户端，用于可重复行为分析。"></li>
+						<li data-en="Deployed an OpenAI-compatible LLM proxy to intercept tool call chains; defined 3 metrics: ranking compliance rate, selection frequency bias, decision divergence rate." data-cn="部署OpenAI兼容的LLM代理，拦截并记录各客户端工具调用链；定义3项核心指标：排名合规率、选择频率偏差、决策分歧率。"></li>
+					</ul>
+					<div class="project-stack">
+						<span class="stack-tag">Python</span>
+						<span class="stack-tag">Flask</span>
+						<span class="stack-tag">MCP</span>
+						<span class="stack-tag">Kali Linux</span>
+						<span class="stack-tag">LLM Proxy</span>
+					</div>
+					<div class="project-footer">
+						<a href="https://github.com/Assmaa-sec/hexstrike-ai-project" target="_blank" rel="noopener" class="project-link">
+							<i class="fab fa-github"></i> <span data-en="View Repository" data-cn="查看代码库"></span>
+						</a>
+						<span class="project-date text-muted" data-en="Feb 2026 – Present" data-cn="2026年2月 – 至今"></span>
+					</div>
+				</div>
+
+				<div class="project-card reveal">
+					<div class="project-card-top">
+						<span class="case-id">CASE-002</span>
+						<span class="badge badge-info" data-en="COMPLETED" data-cn="已完成"></span>
+					</div>
+					<h3 class="project-name">Stardew Dashboard</h3>
+					<p class="project-sub" data-en="Full-Stack AI Developer - Personal Project" data-cn="全栈AI开发者 - 个人项目"></p>
+					<ul class="project-bullets">
+						<li data-en="Intelligent dashboard analyzing Stardew Valley game saves using ReactJS and PHP." data-cn="基于ReactJS与PHP共同开发智能仪表盘，用于分析《星露谷物语》游戏存档数据。"></li>
+						<li data-en="Python scripts with scikit-learn to categorize in-game data and improve user navigation." data-cn="使用scikit-learn编写Python脚本，对游戏内数据进行分类以优化用户导航体验。"></li>
+						<li data-en="Automated filtering and recommendation features, improving functionality and UX." data-cn="添加自动过滤与推荐功能，提升产品实用性与用户体验。"></li>
+					</ul>
+					<div class="project-stack">
+						<span class="stack-tag">ReactJS</span>
+						<span class="stack-tag">PHP</span>
+						<span class="stack-tag">Python</span>
+						<span class="stack-tag">scikit-learn</span>
+					</div>
+					<div class="project-footer">
+						<span class="project-date text-muted" data-en="Feb 2024 – Apr 2025" data-cn="2024年2月 – 2025年4月"></span>
+					</div>
+				</div>
+
+				<div class="project-card reveal">
+					<div class="project-card-top">
+						<span class="case-id">CASE-003</span>
+						<span class="badge badge-pass" data-en="3RD PLACE - NATIONAL" data-cn="全国第三名"></span>
+					</div>
+					<h3 class="project-name">Monarchy Mayhem</h3>
+					<p class="project-sub" data-en="Game Developer - Festival MMI France" data-cn="游戏开发者 - 法国MMI节（全国）"></p>
+					<ul class="project-bullets">
+						<li data-en="Full game built in Unity (C#) with a team; awarded 3rd place at Festival MMI France (national)." data-cn="团队协作使用Unity（C#）完整开发一款游戏，荣获法国MMI节全国第三名。"></li>
+						<li data-en="Enemy AI engineered using state machines and pathfinding algorithms for realistic NPC behaviors." data-cn="基于状态机与寻路算法实现敌方AI，实现真实NPC行为逻辑。"></li>
+						<li data-en="Adaptive difficulty mechanics based on player performance analytics to improve engagement." data-cn="根据玩家行为数据设计自适应难度机制，提升游戏参与感。"></li>
+					</ul>
+					<div class="project-stack">
+						<span class="stack-tag">Unity</span>
+						<span class="stack-tag">C#</span>
+						<span class="stack-tag">State Machines</span>
+						<span class="stack-tag">Pathfinding AI</span>
+					</div>
+					<div class="project-footer">
+						<span class="project-date text-muted" data-en="Nov 2023 – Feb 2024" data-cn="2023年11月 – 2024年2月"></span>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- ═══ CONTACT ═══ -->
+	<section id="contact">
+		<div class="container">
+
+			<div class="section-header reveal">
+				<span class="section-num">§ 500</span>
+				<h2 data-en="Contact" data-cn="联系方式"></h2>
+				<span class="section-tag badge badge-info" data-en="REACH OUT" data-cn="联系我"></span>
+			</div>
+
+			<div class="contact-wrap">
+				<div class="finding-block contact-intro reveal">
+					<div class="finding-label" data-en="AVAILABILITY NOTE" data-cn="求职信息"></div>
+					<p data-en="Open to software engineering and security internship positions starting September 2026 (~10 months). Based in Suzhou on an X-class student visa, legally eligible to intern in China. Prefer English-capable teams."
+						 data-cn="寻求2026年9月起约10个月的软件工程或信息安全实习机会。现持X类学生签证在苏州学习，合法在华实习。优先考虑英语工作环境。"></p>
+				</div>
+
+				<div class="contact-links reveal">
+					<a href="mailto:gerarromain@gmail.com" class="contact-item">
+						<span class="contact-icon"><i class="fas fa-envelope"></i></span>
+						<div class="contact-details">
+							<span class="contact-label" data-en="Email" data-cn="邮箱"></span>
+							<span class="contact-value">gerarromain@gmail.com</span>
+						</div>
+					</a>
+					<a href="tel:+8615905601208" class="contact-item">
+						<span class="contact-icon"><i class="fas fa-phone"></i></span>
+						<div class="contact-details">
+							<span class="contact-label" data-en="Phone (China)" data-cn="电话（中国）"></span>
+							<span class="contact-value">+86 159 0560 1208</span>
+						</div>
+					</a>
+					<a href="https://linkedin.com/in/romain-gerard" target="_blank" rel="noopener" class="contact-item">
+						<span class="contact-icon"><i class="fab fa-linkedin"></i></span>
+						<div class="contact-details">
+							<span class="contact-label">LinkedIn</span>
+							<span class="contact-value">linkedin.com/in/romain-gerard</span>
+						</div>
+					</a>
+					<a href="https://github.com/BreadyBred" target="_blank" rel="noopener" class="contact-item">
+						<span class="contact-icon"><i class="fab fa-github"></i></span>
+						<div class="contact-details">
+							<span class="contact-label">GitHub</span>
+							<span class="contact-value">github.com/BreadyBred</span>
+						</div>
+					</a>
+					<div class="contact-item contact-placeholder-item">
+						<span class="contact-icon"><i class="fab fa-weixin"></i></span>
+						<div class="contact-details">
+							<span class="contact-label">WeChat</span>
+							<span class="contact-value contact-placeholder-val">BreadyBred</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- ═══ FOOTER ═══ -->
+	<footer id="footer">
+		<div class="container">
+			<div class="footer-inner">
+				<span class="footer-logo">GERARD<span class="accent-blue">.R</span></span>
+				<span class="footer-copy text-muted" data-en="© 2026 - Static. No frameworks. No bullshit." data-cn="© 2026 - 纯静态构建，无框架。"></span>
+				<div class="footer-icons">
+					<a href="https://github.com/BreadyBred" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+					<a href="https://linkedin.com/in/romain-gerard" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+					<a href="mailto:gerarromain@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
