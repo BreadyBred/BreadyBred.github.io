@@ -529,6 +529,7 @@
 					</div>
 				</div>
 
+
 				<div class="project-card project-featured reveal">
 					<div class="project-card-top">
 						<span class="case-id">CASE-003</span>
@@ -537,8 +538,8 @@
 					<h3 class="project-name">llm-firewall</h3>
 					<p class="project-sub" data-en="LLM Prompt Security Proxy" data-cn="LLM提示词安全代理"></p>
 					<ul class="project-bullets">
-						<li data-en="Python/Flask reverse proxy that classifies OpenAI-compatible API requests through a two-stage engine: regex rules across 8 attack categories + TF-IDF/Logistic Regression classifier." data-cn="使用Python/Flask构建反向代理，通过两阶段引擎（8类攻击正则规则 + TF-IDF/逻辑回归分类器）对OpenAI兼容API请求进行分类检测。"></li>
-						<li data-en="Supports block/log-only modes with JSONL audit logging for post-incident analysis." data-cn="支持拦截/仅记录模式与JSONL审计日志，用于事后分析。"></li>
+						<li data-en="Two-stage detection engine (regex rules across 8 attack categories + TF-IDF/Logistic Regression classifier) for OpenAI-compatible APIs; achieved 73.3% detection rate at 10% false-positive rate across 90 test cases, with 100% detection on jailbreak attempts." data-cn="使用Python/Flask构建两阶段检测引擎（8类攻击正则规则 + TF-IDF/逻辑回归分类器），对OpenAI兼容API请求进行分类检测；在90条测试用例中实现73.3%检测率（误报率10%），越狱攻击检测率达100%。"></li>
+						<li data-en="Regex layer handled 70% of detections; ML classifier caught the remaining 30% with 87% held-out accuracy and 100% precision on malicious inputs. Weakest categories (data exfiltration 40%, resource exhaustion 60%) identified as v2 priorities." data-cn="规则层承担70%检测量，ML分类器处理剩余30%（留出集准确率87%，恶意样本精确率100%）；数据泄露（40%）与资源耗尽（60%）已确认为下一版本规则优化方向。"></li>
 					</ul>
 					<div class="project-stack">
 						<span class="stack-tag">Python</span>
@@ -563,8 +564,8 @@
 					<h3 class="project-name">llm-redteam</h3>
 					<p class="project-sub" data-en="LLM Adversarial Red-Teaming Harness" data-cn="LLM对抗性红队测试框架"></p>
 					<ul class="project-bullets">
-						<li data-en="Red-teaming harness testing any OpenAI-compatible LLM endpoint across 3 attack categories (prompt injection, jailbreak, indirect injection via tool outputs) with structured JSONL corpus and tag-based filtering." data-cn="红队测试框架，支持任意OpenAI兼容LLM端点，覆盖3类攻击场景（提示注入、越狱攻击、工具输出间接注入），采用结构化JSONL攻击语料库与标签筛选。"></li>
-						<li data-en="Two-pass scoring (regex heuristics + optional LLM judge); HTML/JSON reporting with JSONL audit logging. Integrates with llm-firewall for comparative bypass-rate analysis." data-cn="两阶段评分引擎（正则启发式 + 可选LLM裁判）；生成HTML/JSON报告与JSONL审计日志；集成llm-firewall进行有/无防护绕过率对比分析。"></li>
+						<li data-en="Red-teaming harness for OpenAI-compatible LLM endpoints across 3 attack categories (prompt injection, jailbreak, indirect injection via tool outputs); 54-prompt corpus against llm-firewall measured 20.4% overall bypass rate, identifying direct injection as weakest surface (27.8% vs. 12.5% indirect)." data-cn="对OpenAI兼容LLM端点执行3类红队攻击（提示注入、越狱攻击、工具输出间接注入）；基于54条攻击语料库测试llm-firewall，测得总体绕过率20.4%，发现直接注入为最薄弱防线（绕过率27.8%，间接注入仅12.5%）。"></li>
+						<li data-en="Two-pass scoring engine (regex heuristics + LLM judge for ambiguous cases) with HTML/JSON reporting and JSONL audit logging; hardened across 3 security audit passes (17 → 1 finding), 100% pass rate on 20 unit tests." data-cn="两阶段评分引擎（正则启发式规则 + LLM裁判处理模糊结果），生成HTML/JSON报告与JSONL审计日志；经3轮安全审计将代码缺陷从17项降至1项（仅剩1条低危），20项单元测试全部通过。"></li>
 					</ul>
 					<div class="project-stack">
 						<span class="stack-tag">Python</span>
